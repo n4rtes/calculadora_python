@@ -1,0 +1,54 @@
+# criando um menu calculadora
+
+    # 1) etapa: importar as funções da calculadora
+   
+from funcoes_calculadora import * 
+
+    # 2) etapa: 
+    # abaixo fazemos um print como Menu 
+    # dentro do print usamos ''' para quebrar linha e fica organizado no terminal...
+    # ...as opções como adicao, subtracao, multiplicacao, divisao 
+    # var --> variável qualquer, que recebe: float e input 
+    # float () = números reais em matemática
+    # input () = onde o usuário irá interagir
+                                    
+print(''' 
+        1 - adicao  
+        2 - subtracao
+        3 - multiplicacao
+        4 - divisao
+        ''')
+var = float(input('Escolha uma opcao do menu:'))
+
+# 3) etapa: if, elif, else: 
+#       obs: repita para todos operadores matemáticos seguindo a lógica abaixo:
+
+#   if = se a variável for igual a opção 1(ou 2, 3, 4...);
+#   a = float () = números reais em matemática
+#       input () = onde o usuário irá interagir 
+#   b = float () = números reais em matemática
+#       input () = onde o usuário irá interagir 
+
+if var == 1:
+    a= float(input('Digite o primeiro numero da soma: '))
+    b= float(input('Digite o segundo numero da soma: '))
+    print(adicao(a,b))
+
+elif var == 2:
+    a= float(input('Digite o primeiro numero da subtracao: '))
+    b= float(input('Digite o segundo numero da subtracao: '))
+    print(subtracao(a,b))
+
+elif var == 3:
+    a= float(input('Digite o primeiro numero da multiplicacao: '))
+    b= float(input('Digite o segundo numero da multiplicacao: '))
+    print(multiplicacao(a,b))
+   
+elif var == 4:
+    a= float(input('Digite o primeiro numero da divisao: '))
+    b= float(input('Digite o segundo numero da divisao: '))
+    print(divisao(a,b))
+
+    
+    
+    
