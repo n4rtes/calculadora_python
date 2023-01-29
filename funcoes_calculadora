@@ -1,0 +1,29 @@
+# funções da Calculadora
+
+# 1 parte:
+
+#   criar funções usando def para cada operação matemática
+#   usar o return informando o que será retornado da sua função
+
+
+# função de somar
+def adicao(n1,n2):
+    return n1 + n2
+
+
+# função para diminuir 
+def subtracao(n1,n2):
+    return n1 - n2
+
+
+# função para multiplicar
+def multiplicacao(n1,n2):
+    return n1 * n2
+
+
+# função para dividir
+def divisao(n1,n2):
+    return n1 / n2
+
+
+
